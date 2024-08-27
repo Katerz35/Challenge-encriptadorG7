@@ -1,0 +1,155 @@
+/* Estilos globales */
+* {
+    background: #dbf287;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 1.2; /* Ajustado para una mejor legibilidad */
+    overflow: hidden; /* Oculta el desbordamiento de ambos ejes */
+}
+
+/* Logo */
+.logo {
+    padding-top: 8px;
+    margin-left: 8px;
+    width: auto; /* Ajustado para un ancho flexible */
+}
+
+/* Título */
+.titulo {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center; /* Centrar el título */
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    margin-left: 180px; /* Verifica si este margen es necesario o causa desbordamiento */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Área de texto */
+.text-area {
+    height: 280px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+/* Contenedor del mensaje */
+.mensaje {
+    height: 500px; /* Altura del contenedor */
+    background: white;
+    background-image: url("/imagenes/Encriptador.jpg");
+    background-repeat: no-repeat;
+    background-position: top 20px center; /* Ajusta la posición de la imagen */
+    background-size: 250px 350px; /* Tamaño específico de la imagen */
+    background-clip: padding-box; /* Asegura que los bordes redondeados se apliquen correctamente */
+    border: none;
+    border-radius: 30px; /* Bordes redondeados del contenedor */
+    color: #716c0a;
+    margin-left: 98px;
+    margin-top: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Sección de salida */
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.output-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.result-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.output-text {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: -10px; /* Ajusta según sea necesario */
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar,
+.btn-encriptar,
+.btn-copiar {
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px; /* Unifica el ancho para mantener consistencia */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+/* Estilos específicos de botones */
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 3px solid #0A3871;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 3px solid #031e3f;
+    color: white;
+}
+
+.btn-copiar {
+    background-color: #0A3871;
+    border: 3px solid #031e3f;
+    color: white;
+    margin-top: 20px; /* Asegura que el botón esté al fondo del contenedor */
+    width: 336px; /* Un poco más ancho para diferenciarlo */
+    align-self: center; /* Centra el botón dentro del contenedor */
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: transparent; /* Cambiado a transparent para evitar conflictos */
+    color: #031e3f;
+    width: 100%;
+    text-align: center;
+}
+
+/* Información adicional */
+.informacion {
+    color: #0f2031;
+    font-size: 20px;
+}
+

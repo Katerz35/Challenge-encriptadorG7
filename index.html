@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambié el idioma a 'es' si tu página está en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preconexiones y fuentes optimizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Encriptador de Textos</title>
+</head>
+<body>
+    <header>
+        <!-- Logo con atributos alt descriptivos -->
+        <img class="logo" src="/imagenes/Frame 6.png" alt="Logotipo de Alura" >
+        <h1 class="titulo">Encriptador de textos</h1>
+    </header>
+
+    <main>
+        <!-- Sección de entrada de texto -->
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Coloca tu texto aquí"></textarea>
+            <div>
+                <p class="informacion">Solo letras minúsculas, sin acentos</p> <!-- Cambié h6 a p para semántica -->
+            </div>
+            <div class="botones">
+                <!-- Botones con roles de accesibilidad y funciones enlazadas -->
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <!-- Sección de resultados -->
+        <section>
+            <textarea class="mensaje" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+            <div>
+                <!-- Botón copiar centrado -->
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Información del autor con elementos semánticos -->
+        <p>Hecho por: <strong>Katya Soto Ramirez</strong> - <em>Alura</em> - Oracle One G7 2024. &copy;</p>
+    </footer>
+
+    <!-- Enlace al script externo -->
+    <script src="/script.js"></script>
+</body>
+</html>
